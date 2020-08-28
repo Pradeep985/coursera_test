@@ -22,7 +22,7 @@
   background-image: url('../images/road.jpg');
   background-size: cover;
   background-position: absolute;
-  bottom: 100px;
+  bottom: 0;
   left: 0;
   right: 0;
   z-index:1;
