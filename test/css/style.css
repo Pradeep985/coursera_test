@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  color: #d9d9d9;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+
+
+
+
+.bg
+{
+  height: 100vh;
+  width:100%;
+  background-image: url('sky.jpg');
+  background-size: cover;
+  background-position: centre;
+  position: relative;
+  overflow-x: hidden;
+}
+
+
+
+footer{
+  position: fixed;
+  bottom: 400px;
+  width: 100%;
+  
+}
+
+.footer .footer-bottom{
+   background: #343a40;
+   color: #686868;
+   height:50px;
+   width: 100%;
+   text-align: centre;
+   position: absolute;
+   bottom: 0px;
+   left: 0px;
+   pading-top: 20px;
+}
+.main-content{
+  display: flex;
+}
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+.box h1,
+.box h2{
+  color: white;
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.main-content .left  h1 span{
+  color: #800000;
+}
+.box .content{
+  margin: 20px 0 0 0;
+  position: relative;
+}
+.box .content:before{
+  position: absolute;
+  content: '';
+  top: -10px;
+  height: 2px;
+  width: 100%;
+  background: #D3D3D3;
+}
+.box .content:after{
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 30%;
+  background: #f12020;
+  top: -10px;
+}
+.left .content p{
+  text-align: justify;
+}
+.left .content .contact span{
+  display: block;
+  font-size:1.1em;
+  margin-bottom: 8px;
+}
+.left .content .social a{
+  padding: 0 2px;
+}
+
+.left .content .social a span{
+  border: 1px solid gray;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.left .content .social a span:hover{
+  background: #f12020;
+}
+.center .content ul a {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  transition: all .3s;
+}
+.center .content ul a:hover{
+  color: white;
+  margin-left: 15px;
+  transition: all .3s; 
+}
+.center .content .fas:hover{
+  background: #f12020;
+}
+.center .content .text{
+  font-size: 1.0625rem;
+  font-weight: 500;
+  padding-left: 10px;
+}
+.center .content .phone{
+  margin: 15px 0;
+}
+.right form .text{
+  font-size: 1.0625rem;
+  margin-bottom: 2px;
+  color: #D3D3D3;
+}
+.right form .msg{
+  margin-top: 10px;
+}
+.right form input, .right form textarea{
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #FFFFFF;
+  padding-left: 10px;
+  border: 1px solid #222222;
+}
+.right form input:focus,
+.right form .msgForm:focus{
+  outline-color: #3498db;
+}
+.right form input{
+  height: 35px;
+}
+.right form .btn{
+  margin-top: 50px;
+}
+.right form .btn button{
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #f12020;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .3s;
+}
+.right form .btn button:hover{
+  background: #f61616;
+}
+.bottom center{
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: #151515;
+}
+.bottom center span{
+  color: #656565;
+}
+.bottom center a{
+  color: #f12020;
+  text-decoration: none;
+}
+.bottom center a:hover{
+  text-decoration: underline;
+}
+@media screen and (max-width: 900px) {
+  footer{
+    position: relative;
+    bottom: 0px;
+  }
+  .main-content{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .main-content .box{
+    margin: 5px 0;
+  }
+}
+
+
+body{
+     background-color: transparent ;
+}
+#road{
+  position: fixed;
+  
+  bottom: 20px;
+  border-bottom:10px dashed white;
+
+}
+#runner{
+  position: fixed;
+  
+  bottom: 30px;
+  background:url('walking.png');
+  width: 215px  ;
+  height: 300px  ;
+  animation: walk 1s steps(4) infinite,
+             forward 10s linear infinite;
+
+
+}
+@keyframes walk{
+  0%{
+      background-position: 0px;
+}
+  100%{
+      background-position: 860px;
+}
+}
+@keyframes forward{
+  0%{
+     transform:translateX(-100px);
+}
+  100%{
+      transform:translateX(1200px);
+}
